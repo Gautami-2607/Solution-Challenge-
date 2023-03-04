@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Animate on Scrolling using HTML, CSS and JS</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="stylez.css" rel="stylesheet">
+    </head>
+    <body>
+    <h1>Application Name - Added Scrolling</h1>
+    <div class="hero">
+    <nav>
+        <h2 class="logo">Application <span>Name</span></h2>
+        <ul>
+        <li><a href="#Home"><h3>Home</h3></a></li>
+        <li><a herf="#About"><h3>About Us</h3></a></li>
+        <li><a herf="#Services"><h3>Services</h3></a></li>
+        <li><a herf="#Contact"><h3>Contact</h3></a></li>
+        <li><a herf="#Help"><h3>Help</h3></a></li>
+        </ul>
+        <button type="button">Login/Sign Up</button>
+    </nav>
+    </div>
+    <div class="box"><h2 id="Home">Home</h2></div>
+    <div class="box"><h2 id="About">About Us</h2></div>
+    <div class="box"><h2 id="Services">Services</h2></div>
+    <div class="box"><h2 id="Contact">Contact</h2></div>
+    <div class="box"><h2 id="Help">Help</h2></div>
+    <div class="box"><h2>SEO OPTIMIZED</h2></div>
+    <div class="box"><h2>WORDPRESS</h2></div>
+    <div class="box"><h2>SUPPORTS</h2></div>
+    <div class="box"><h2>DEVELOPMENT</h2></div>
+    <div class="box"><h2>MOBILE SUPPORT</h2></div>
+    <div class="box"><h2>CONTENT</h2></div>
+    
+    <script>
+       const boxes = document.querySelectorAll('.box')
+       window.addEventListener('scroll', checkBoxes)
+       checkBoxes()
+       function checkBoxes(){
+        const triggerBottom = window.innerHeight / 5 * 4
+        boxes.forEach(box => {
+            const boxTop = box.getBoundingClientRect().top
+            if(boxTop < triggerBottom ){
+                box.classList.add('show')
+            }else{
+                box.classList.remove('show')
+            }
+        })
+       } 
+    </script>
+    
+    </body>
+</html>
