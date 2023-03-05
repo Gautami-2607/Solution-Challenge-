@@ -9,9 +9,9 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgda(0,0,0,0.6),rgda(0,0,0,0.6)),url(https://i.pinimg.com/originals/5d/1c/97/5d1c97756f142cdbacd3cc9390c06384.png);
     background-size: cover;
     background-position: center;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/511/840/large_2x/nature-of-mother-vector.jpg");
 }
 
 
@@ -97,6 +97,11 @@ h1{
     box-shadow: rgba(0,0,0,0.2) 0px 60px  40px -7px;
     transform: translateX(400%);
     transition: transform 2.5s ease;
+}
+
+.bigbox{
+    background-image: url("https://static.vecteezy.com/system/resources/previews/002/511/840/large_2x/nature-of-mother-vector.jpg");
+
 }
 
 .box:nth-of-type(even){
